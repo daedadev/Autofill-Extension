@@ -13,15 +13,15 @@ Next you'll need to click on Load Unpacked in the top left corner. From there se
 ![Picture of Load Unpacked button](img/Screenshot1.PNG?raw=true)
 
 After the package has been installed you can toggle it on and off here using this toggle button. Make sure it is toggled on before moving on to the next step.
-![Picture of the Autofill extension toggle button](public/images/Screenshot3.PNG?raw=true)
+![Picture of the Autofill extension toggle button](img/Screenshot3.PNG?raw=true)
 
 Finally you'll need to click the chrome extension icon in the top right of your browser window. Clicking it will show you a list of your extensions where you will find the Autofill. From there make sure it is pinned so you can see the icon visible as shown in the image.
-![Picture of the chrome extension tray](public/images/Screenshot4.PNG?raw=true)
+![Picture of the chrome extension tray](img/Screenshot4.PNG?raw=true)
 
 ## Usage
 
 To start simply click on the icon in the extension tray to bring up the popup window. From here enter your information and hit save and you're all done. Now simply go to Supreme or a shopify website watch the magic happen.
-![Picture of the main page](public/images/Screenshot5.PNG?raw=true)
+![Picture of the main page](img/Screenshot5.PNG?raw=true)
 
 ## License
 
