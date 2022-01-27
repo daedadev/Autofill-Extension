@@ -20,7 +20,7 @@ Finally you'll need to click the chrome extension icon in the top right of your 
 
 ## Usage
 
-To start simply click on the icon in the extension tray to bring up the popup window. From here enter your information and hit save and you're all done. Now simply go to Supreme or a shopify website watch the magic happen. ------
+To start simply click on the icon in the extension tray to bring up the popup window. From here enter your information and hit save and you're all done. Now simply go to Supreme or a shopify website watch the magic happen. ----------------------------------------
 ![Picture of the main page](img/Screenshot5.PNG?raw=true)
 
 ## License
