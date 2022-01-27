@@ -6,25 +6,22 @@ This is a google chrome autofill extension meant to aid in quick online purchase
 
 ## Installation
 
-This is the main section of my webpage, here you are greeted with my skills in the banner, a nav bar at the very top right and some of my projects to the bottom.
-![Picture of the main page](img/Screenshot1.PNG?raw=true)
+The first thing you'll want to do is download the code for this project, once you have the files saved go to chrome://extensions/ this url in google chrome. From there you will be met with the extensions page. In the top right you want to make sure that developer mode is activated.
+![Picture of the developer mode toggle](img/Screenshot2.PNG?raw=true)
 
-This section is the bottom of the page displaying the about me section and the contact form as well as my contact info.
-![Picture of the bottom of the main page containing the contact form](public/images/Screenshot2.PNG?raw=true)
+Next you'll need to click on Load Unpacked in the top left corner. From there select the folder containing all of the code. Make sure you select the Folder, and not any of the contents in the folder. You need to give the folder with all the contents for it to be read properly.
+![Picture of Load Unpacked button](img/Screenshot1.PNG?raw=true)
 
-Clicking on one of my projects will take you to this page displaying the project information, challenges, successes, as well as frameworks used. There are also links to the gihub page, the live application, as well as a video I have made specifically for the project.
-![Picture of the project page](public/images/Screenshot3.PNG?raw=true)
+After the package has been installed you can toggle it on and off here using this toggle button. Make sure it is toggled on before moving on to the next step.
+![Picture of the Autofill extension toggle button](public/images/Screenshot3.PNG?raw=true)
 
-Upon clicking the video button you will be met with a modal housing the youtube video from my youtube channel detailing my project.
-![Picture of the youtube video modal](public/images/Screenshot4.PNG?raw=true)
-
-Clicking the right most button on the nav bar at the top of the page will take you to my resume which you can resize, download, or just scroll through.
-![Picture of the resume page](public/images/Screenshot5.PNG?raw=true)
+Finally you'll need to click the chrome extension icon in the top right of your browser window. Clicking it will show you a list of your extensions where you will find the Autofill. From there make sure it is pinned so you can see the icon visible as shown in the image.
+![Picture of the chrome extension tray](public/images/Screenshot4.PNG?raw=true)
 
 ## Usage
 
-This is the main section of my webpage, here you are greeted with my skills in the banner, a nav bar at the very top right and some of my projects to the bottom.
-![Picture of the main page](public/images/Screenshot1.PNG?raw=true)
+To start simply click on the icon in the extension tray to bring up the popup window. From here enter your information and hit save and you're all done. Now simply go to Supreme or a shopify website watch the magic happen.
+![Picture of the main page](public/images/Screenshot5.PNG?raw=true)
 
 ## License
 
