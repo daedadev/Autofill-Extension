@@ -1,7 +1,5 @@
 function getContent() {
-  chrome.runtime.sendMessage({ greeting: "start" }, function (response) {
-    console.log("Message Has Been Sent");
-  });
+  chrome.runtime.sendMessage({ greeting: "start" }, function (response) {});
 }
 
 function DaedaDev() {
@@ -39,218 +37,156 @@ window.onload = function () {
     //Set Elements ----------------------------------------------------------------
     var savedEmail = document.getElementById("email").value;
 
-    chrome.storage.sync.set({ email: savedEmail }, function () {
-      console.log(savedEmail);
-    });
+    chrome.storage.sync.set({ email: savedEmail }, function () {});
 
     var savedFirst = document.getElementById("firstName").value;
 
-    chrome.storage.sync.set({ firstName: savedFirst }, function () {
-      console.log(savedFirst);
-    });
+    chrome.storage.sync.set({ firstName: savedFirst }, function () {});
 
     var savedLast = document.getElementById("lastName").value;
 
-    chrome.storage.sync.set({ lastName: savedLast }, function () {
-      console.log(savedLast);
-    });
+    chrome.storage.sync.set({ lastName: savedLast }, function () {});
 
     var savedAddress = document.getElementById("Address").value;
 
-    chrome.storage.sync.set({ Address: savedAddress }, function () {
-      console.log(savedAddress);
-    });
+    chrome.storage.sync.set({ Address: savedAddress }, function () {});
 
     var savedAddress2 = document.getElementById("Address2").value;
 
-    chrome.storage.sync.set({ Address2: savedAddress2 }, function () {
-      console.log(savedAddress2);
-    });
+    chrome.storage.sync.set({ Address2: savedAddress2 }, function () {});
 
     var savedAddress3 = document.getElementById("Address3").value;
 
-    chrome.storage.sync.set({ Address3: savedAddress3 }, function () {
-      console.log(savedAddress3);
-    });
+    chrome.storage.sync.set({ Address3: savedAddress3 }, function () {});
 
     var savedpostalCode = document.getElementById("postalCode").value;
 
-    chrome.storage.sync.set({ postalCode: savedpostalCode }, function () {
-      console.log(savedpostalCode);
-    });
+    chrome.storage.sync.set({ postalCode: savedpostalCode }, function () {});
 
     var savedCity = document.getElementById("City").value;
 
-    chrome.storage.sync.set({ City: savedCity }, function () {
-      console.log(savedCity);
-    });
+    chrome.storage.sync.set({ City: savedCity }, function () {});
 
     var savedphoneNumber = document.getElementById("phoneNumber").value;
 
-    chrome.storage.sync.set({ phoneNumber: savedphoneNumber }, function () {
-      console.log(savedphoneNumber);
-    });
+    chrome.storage.sync.set({ phoneNumber: savedphoneNumber }, function () {});
 
     //Shopify and Supreme Differences ---------------------------------------
 
     //For Shopify -------------------------------------------------------
     var Shopifycountry = document.getElementById("country").value;
 
-    chrome.storage.sync.set({ country: Shopifycountry }, function () {
-      console.log(Shopifycountry);
-    });
+    chrome.storage.sync.set({ country: Shopifycountry }, function () {});
 
     var Shopifystate = document.getElementById("state").value;
 
-    chrome.storage.sync.set({ state: Shopifystate }, function () {
-      console.log(Shopifystate);
-    });
+    chrome.storage.sync.set({ state: Shopifystate }, function () {});
 
     //For Supreme ---------------------------------------------------
 
     var savedcountryName = document.getElementById("country").value;
 
-    chrome.storage.sync.set({ countryName: savedcountryName }, function () {
-      console.log(savedcountryName);
-    });
+    chrome.storage.sync.set({ countryName: savedcountryName }, function () {});
 
     var savedstateName = document.getElementById("state").value;
 
-    chrome.storage.sync.set({ stateName: savedstateName }, function () {
-      console.log(savedstateName);
-    });
+    chrome.storage.sync.set({ stateName: savedstateName }, function () {});
 
     //Card information -----------------------------------------
     var savedcardType = document.getElementById("cardType").value;
 
-    chrome.storage.sync.set({ cardType: savedcardType }, function () {
-      console.log(savedcardType);
-    });
+    chrome.storage.sync.set({ cardType: savedcardType }, function () {});
 
     var savedcardName = document.getElementById("cardName").value;
 
-    chrome.storage.sync.set({ cardName: savedcardName }, function () {
-      console.log(savedcardName);
-    });
+    chrome.storage.sync.set({ cardName: savedcardName }, function () {});
 
     var savedcardNumber = document.getElementById("cardNumber").value;
 
-    chrome.storage.sync.set({ cardNumber: savedcardNumber }, function () {
-      console.log(savedcardNumber);
-    });
+    chrome.storage.sync.set({ cardNumber: savedcardNumber }, function () {});
 
     var savedexpirationMonth = document.getElementById("expirationMonth").value;
 
     chrome.storage.sync.set(
       { expirationMonth: savedexpirationMonth },
-      function () {
-        console.log(savedexpirationMonth);
-      }
+      function () {}
     );
 
     var savedexpirationYear = document.getElementById("expirationYear").value;
 
     chrome.storage.sync.set(
       { expirationYear: savedexpirationYear },
-      function () {
-        console.log(savedexpirationYear);
-      }
+      function () {}
     );
 
     var savedcvv = document.getElementById("cvv").value;
 
-    chrome.storage.sync.set({ cvv: savedcvv }, function () {
-      console.log(savedcvv);
-    });
+    chrome.storage.sync.set({ cvv: savedcvv }, function () {});
   }
-
-  console.log("_________________Fuck_________________");
 
   //Get Elements -----------------------------------------------------------------
   chrome.storage.sync.get("email", function (data) {
     if (typeof data.email != "undefined") {
-      console.log(data.email);
-
       document.getElementById("email").value = data.email;
     }
   });
 
   chrome.storage.sync.get("firstName", function (data) {
     if (typeof data.firstName != "undefined") {
-      console.log(data.firstName);
-
       document.getElementById("firstName").value = data.firstName;
     }
   });
 
   chrome.storage.sync.get("lastName", function (data) {
     if (typeof data.lastName != "undefined") {
-      console.log(data.lastName);
-
       document.getElementById("lastName").value = data.lastName;
     }
   });
 
   chrome.storage.sync.get("Address", function (data) {
     if (typeof data.Address != "undefined") {
-      console.log(data.Address);
-
       document.getElementById("Address").value = data.Address;
     }
   });
 
   chrome.storage.sync.get("Address2", function (data) {
     if (typeof data.Address2 != "undefined") {
-      console.log(data.Address2);
-
       document.getElementById("Address2").value = data.Address2;
     }
   });
 
   chrome.storage.sync.get("Address3", function (data) {
     if (typeof data.Address3 != "undefined") {
-      console.log(data.Address3);
-
       document.getElementById("Address3").value = data.Address3;
     }
   });
 
   chrome.storage.sync.get("postalCode", function (data) {
     if (typeof data.postalCode != "undefined") {
-      console.log(data.postalCode);
-
       document.getElementById("postalCode").value = data.postalCode;
     }
   });
 
   chrome.storage.sync.get("City", function (data) {
     if (typeof data.City != "undefined") {
-      console.log(data.City);
-
       document.getElementById("City").value = data.City;
     }
   });
 
   chrome.storage.sync.get("country", function (data) {
     if (typeof data.country != "undefined") {
-      console.log(data.country);
-
       document.getElementById("country").value = data.country;
     }
   });
 
   chrome.storage.sync.get("stateName", function (data) {
     if (typeof data.stateName != "undefined") {
-      console.log(data.stateName);
-
       document.getElementById("state").value = data.stateName;
     }
   });
 
   chrome.storage.sync.get("phoneNumber", function (data) {
     if (typeof data.phoneNumber != "undefined") {
-      console.log(data.phoneNumber);
-
       document.getElementById("phoneNumber").value = data.phoneNumber;
     }
   });
@@ -259,48 +195,36 @@ window.onload = function () {
 
   chrome.storage.sync.get("cardType", function (data) {
     if (typeof data.cardType != "undefined") {
-      console.log(data.cardType);
-
       document.getElementById("cardType").value = data.cardType;
     }
   });
 
   chrome.storage.sync.get("cardName", function (data) {
     if (typeof data.cardName != "undefined") {
-      console.log(data.cardName);
-
       document.getElementById("cardName").value = data.cardName;
     }
   });
 
   chrome.storage.sync.get("cardNumber", function (data) {
     if (typeof data.cardNumber != "undefined") {
-      console.log(data.cardNumber);
-
       document.getElementById("cardNumber").value = data.cardNumber;
     }
   });
 
   chrome.storage.sync.get("expirationMonth", function (data) {
     if (typeof data.expirationMonth != "undefined") {
-      console.log(data.expirationMonth);
-
       document.getElementById("expirationMonth").value = data.expirationMonth;
     }
   });
 
   chrome.storage.sync.get("expirationYear", function (data) {
     if (typeof data.expirationYear != "undefined") {
-      console.log(data.expirationYear);
-
       document.getElementById("expirationYear").value = data.expirationYear;
     }
   });
 
   chrome.storage.sync.get("cvv", function (data) {
     if (typeof data.cvv != "undefined") {
-      console.log(data.cvv);
-
       document.getElementById("cvv").value = data.cvv;
     }
   });
